@@ -98,7 +98,6 @@ class _QuestionState extends State<QuestionApp> {
         ),
       );
     } else {
-//      print("Acabou o jogo\n");
       return Expanded(
         child: Column(
           children: <Widget>[
