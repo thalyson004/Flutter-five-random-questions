@@ -98,9 +98,7 @@ class _QuestionState extends State<QuestionApp> {
         ),
       );
     } else {
-      Alert(context: context, title: "RFLUTTER", desc: "Flutter is awesome.")
-          .show();
-      print("Acabou o jogo\n");
+//      print("Acabou o jogo\n");
       return Expanded(
         child: Column(
           children: <Widget>[
@@ -109,7 +107,7 @@ class _QuestionState extends State<QuestionApp> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    'Parabéns!',
+                    'Congratulations!',
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.white,
@@ -118,7 +116,7 @@ class _QuestionState extends State<QuestionApp> {
                   Padding(
                     padding: const EdgeInsets.all(50.0),
                     child: Text(
-                      '$correct / ${questions.listSize()}',
+                      '$correct / ${questions.numberOfQuestions()}',
                       style: TextStyle(
                         fontSize: 25,
                         color: Colors.white,
