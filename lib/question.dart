@@ -5,7 +5,6 @@ class Question {
     this.question = question;
     this.correct = correct;
   }
-
 }
 
 class QuestionList {
